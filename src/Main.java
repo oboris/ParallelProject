@@ -31,7 +31,10 @@ public class Main {
 
 // Part 3
         Store store = new Store();
-        new Consumer(store);
-       // new Producer(store);
+        new Consumer(5, store);
+        new Consumer(5, store);
+        new Producer(3, store);
+        new Producer(2, store);
+        new Producer(5, store);
     }
 }
